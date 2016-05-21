@@ -16,6 +16,9 @@ class maps:
 		self.gridsetting = None
 		self.coloricon = 'http://chart.apis.google.com/chart?cht=mm&chs=12x16&chco=FFFFFF,XXXXXX,000000&ext=.png'
 
+	def setcenter(self, centerLat, centerLng):
+		self.center = (float(centerLat),float(centerLng))
+
 	def setgrids(self,slat,elat,latin,slng,elng,lngin):
 		self.gridsetting = [slat,elat,latin,slng,elng,lngin]
 
